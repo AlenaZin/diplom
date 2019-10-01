@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Source+Sans+Pro&display=swap');
+
+html, body {
+  height:      100%;
+  margin:      0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+.container {
+  padding-left:  100px;
+  padding-right: 100px;
+}
+
+.arrow-right {
+  display:     inline-block;
+  margin-left: 8px;
+}
+
+.bg-smoke {
+  background: #F5F6F7;
+}
+
+.roboto-slab {
+  font-family: 'Roboto Slab', serif;
+}
+
+.source-sans-pro {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.title {
+  display:         flex;
+  justify-content: space-between;
+  line-height:     46px;
+}
+.title h2 {
+  margin:      0;
+  font-weight: normal;
+  font-size:   40px;
+}
+.title a {
+  margin:          0;
+  font-size:       18px;
+  text-decoration: none;
+  color:           #1A1B22;
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .container {
+    padding-left:  40px;
+    padding-right: 40px;
+  }
+
+  .title h2 {
+    font-size: 30px;
+    max-width: 338px;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .container {
+    padding-left:  16px;
+    padding-right: 16px;
+  }
+
+  .title h2 {
+    font-size: 30px;
+    max-width: 200px;
+  }
+
+  .title {
+    display: block;
+  }
+
+  .wrapper {
+    min-height: 0;
+  }
+}

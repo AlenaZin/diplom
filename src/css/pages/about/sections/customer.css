@@ -1,0 +1,32 @@
+.customer {
+  padding-top:    160px;
+  padding-bottom: 80px;
+  max-width:      815px;
+  font-weight:    normal;
+  font-size:      18px;
+}
+.customer__title {
+  font-weight: normal;
+  font-size:   40px;
+  margin:      0;
+}
+.customer p {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .customer__title {
+    font-size:   30px;
+  }
+  .customer {
+    padding-top:    104px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .customer {
+    padding-top:    96px;
+    padding-bottom: 32px;
+  }
+}

@@ -1,0 +1,10 @@
+@import './css/common.css';
+
+@import './css/blocks/page.css';
+@import './css/blocks/header.css';
+@import './css/blocks/footer.css';
+@import './css/blocks/author.css';
+
+@import './css/pages/index/main.css';
+@import './css/pages/about/main.css';
+@import './css/pages/analytic/main.css';
