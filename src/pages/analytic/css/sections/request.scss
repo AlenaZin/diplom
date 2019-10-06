@@ -1,0 +1,63 @@
+.request {
+  padding-top: 120px;
+  padding-bottom: 80px;
+
+  &__navigation {
+    display: flex;
+  }
+
+  &__link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #1A1B22;
+  }
+
+  &__analytic {
+    font-size: 18px;
+    color: #B6BCBF;
+    margin-left: 5px;
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 80px;
+  }
+
+  &__news {
+    font-size: 18px;
+    margin: 0;
+  }
+
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .request {
+    padding-top: 112px;
+    padding-bottom: 40px;
+
+    &__title {
+      font-size: 32px;
+      margin-top: 64px;
+    }
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .request {
+    padding-top: 90px;
+    padding-bottom: 24px;
+
+    &__title {
+      font-size: 30px;
+      margin-top: 0;
+    }
+
+    &__link, &__analytic {
+      font-size: 0;
+    }
+    &__navigation {
+      height: 0;
+    }
+  }
+}

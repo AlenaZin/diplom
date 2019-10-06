@@ -1,0 +1,21 @@
+.not-found {
+  padding-top:      80px;
+  padding-bottom:   80px;
+
+  &__inner {
+    margin:     0 auto;
+    max-width:  270px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size:   26px;
+    font-weight: normal;
+    margin:      0;
+  }
+
+  &__text {
+    font-size: 18px;
+    color:     #B6BCBF;
+  }
+}
