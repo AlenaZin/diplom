@@ -3,386 +3,134 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Данный сайт содержит информацию об обучениии в Яндекс.Практикуме">
-  <meta name="author" content="Alena Zinovieva">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Данный сайт содержит информацию об обучениии в Яндекс.Практикуме">
+<meta name="author" content="Alena Zinovieva">
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
+
   <title>Дипломная работа Яндекс.Практикум</title>
-  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
-  <link rel="stylesheet" href="style.f0dbe626e814ae2673d2.css?b313dfd433a76a4b5663">
+  <link rel="stylesheet" href="style.05ddf0ba52415d252761.css?81afba3a975f80aa59b8">
 </head>
 
 <body>
-<div class="wrapper" page="">
+
+<div class="wrapper" data-page="index">
   <header class="header container">
-    <h1 class="roboto-slab">NewsAnalyzer</h1>
-    <div class="header__menu">
-      <a href="#" page="index" class="header__menu_page">Главная</a>
-      <a href="#" page="about" class="header__menu_page">О проекте</a>
-      <a href="#" page="analytic" class="header__menu_page">Стат</a>
+  <h1 class="roboto-slab header__title">NewsAnalyzer</h1>
+  <div class="header__menu">
+    <a href="/" class="header__menu__link header__menu__link_active">Главная</a>
+    <a href="/about.html" class="header__menu__link">О проекте</a>
+  </div>
+</header>
+
+  <div class="page">
+    <div class="search">
+  <div class="search__inner">
+    <h2 class="search__title roboto-slab">Что в мире творится?</h2>
+    <p class="search__text">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за
+      прошедшую неделю.</p>
+    <div class="search__panel">
+      <input type="text" name="text" placeholder="Введите тему новости" class="search__input"/>
+      <button class="search__button">Искать</button>
     </div>
-  </header>
-
-  <div page="index" class="page">
-    <section class="search">
-      <div class="search__inner">
-        <h2 class="search__title roboto-slab">Что в мире творится?</h2>
-        <p class="search__text">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за
-          прошедшую неделю.</p>
-        <div class="search__panel">
-          <input type="text" name="text" placeholder="Введите тему новости" class="search__panel_input"/>
-          <button class="search__panel_button">Искать</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="loader bg-smoke">
-      <div class="loader__inner">
-        <img src="./images/loader.gif" alt="" width=120px/>
-        <p class="loader__text">Идет поиск новостей...</p>
-      </div>
-    </section>
-
-    <section class="not-found bg-smoke">
-      <div class="not-found__inner">
-        <img src="./images/not-found.png" alt=""/>
-        <h3 class="roboto-slab">Ничего не найдено</h3>
-        <p class="not-found__text">К сожалению по вашему запросу ничего не найдено.</p>
-      </div>
-    </section>
-
-    <section class="result container bg-smoke">
-      <div class="result__title title">
-        <h2 class="roboto-slab">Результаты поиска</h2>
-        <a href="#" class="to-analitic">
-          <span>Посмотреть аналитику</span>
-          <img src="./images/arrow_right.svg" alt="" class="arrow-right">
-        </a>
-      </div>
-      <div class="result__container">
-
-        <div class="result__containe_inner">
-          <img src="./images/image.png" alt="">
-          <div class="result__containe_info">
-            <p class="result__containe_data source-sans-pro">2 августа, 2019</p>
-            <h3 class="result__container_title roboto-slab">Национальное достояние – парки</h3>
-            <p class="result__container_text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система
-              национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-            <p class="result__container_source roboto-slab">Лента.ру</p>
-          </div>
-        </div>
-        <div class="result__containe_inner">
-          <img src="./images/image.png" alt="">
-          <div class="result__containe_info">
-            <p class="result__containe_data source-sans-pro">2 августа, 2019</p>
-            <h3 class="result__container_title roboto-slab">Национальное достояние – парки</h3>
-            <p class="result__container_text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система
-              национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-            <p class="result__container_source roboto-slab">Лента.ру</p>
-          </div>
-        </div>
-        <div class="result__containe_inner">
-          <img src="./images/image.png" alt="">
-          <div class="result__containe_info">
-            <p class="result__containe_data source-sans-pro">2 августа, 2019</p>
-            <h3 class="result__container_title roboto-slab">Национальное достояние – парки</h3>
-            <p class="result__container_text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система
-              национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-            <p class="result__container_source roboto-slab">Лента.ру</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="result__button">
-        <button class="result__button_inner">Показать еще</button>
-      </div>
-    </section>
-
-    <section class="author container">
-      <div class="author__avatar">
-        <img src="./images/avatar.jpg" alt="" class="author__avatar_foto"/>
-      </div>
-      <div class="author__info">
-        <h3 class="roboto-slab">Об авторе</h3>
-        <p>Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь,
-          какими технологиями разработки владете.</p>
-        <p>Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
-          потенциальным заказчикам.</p>
-      </div>
-    </section>
-
   </div>
-
-
-  <div page="about" class="page">
-
-    <section class="customer container">
-      <h2 class="customer__title roboto-slab">Клиентам</h2>
-      <p>Этот сайт — дипломный проект студента Яндкс.Практикума. Его цель — показать, чему научился студент, и какими
-        технологиями владеет.</p>
-      <p>Вёртска сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять
-        новые страницы и функциальность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также
-        сайт проще и дешевле поддерживать.</p>
-      <p>Карточки с новостям приходят с сервера и обрабатываются асихронно. То есть сайт продолжает работать, пока
-        от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
-      <p>При создании проекта была использона сборка технологией Webpack. Это современных подход к разработке сайтов.
-        Код оптимизируется, а значит, сайт работает быстрее. Также настроена сайт работает в старых браузерах. Даже
-        если посетители — пользователи старых операционных систем у них не будет проблем с отображением. А значит
-        потенциальная аудитория возрастает.</p>
-      <p>Проект был проверен экспертами Яндекс.Практикума. И если вашему бизесу нужен сайт, мы рекомендуем обратиться
-        к этому студенту.</p>
-    </section>
-
-    <section class="technologies container bg-smoke">
-      <div class="technologies__title">
-        <h2 class="roboto-slab">Используемые технологии</h2>
-      </div>
-      <div class="technologies__elements">
-        <div class="technologies__element">
-          <p>HTML</p>
-          <img src="./images/html.png" alt="">
-        </div>
-        <div class="technologies__element">
-          <p>CSS</p>
-          <img src="./images/css.png" alt="">
-        </div>
-        <div class="technologies__element">
-          <p>Java Script</p>
-          <img src="./images/js.png" alt="">
-        </div>
-        <div class="technologies__element">
-          <p>Webpack</p>
-          <img src="./images/webpack.png" alt="">
-        </div>
-      </div>
-    </section>
-
-    <section class="author container">
-      <div class="author__avatar">
-        <img src="./images/avatar.jpg" alt="" class="author__avatar_foto"/>
-      </div>
-      <div class="author__info">
-        <h3 class="roboto-slab">Об авторе</h3>
-        <p>Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь,
-          какими технологиями разработки владете.</p>
-        <p>Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
-          потенциальным заказчикам.</p>
-      </div>
-    </section>
-
-    <section class="github bg-smoke">
-
-      <div class="github__arrow left" onclick="minusSlide()">
-        <img src="./images/slider-left.png" alt="">
-      </div>
-      <div class="github__arrow right" onclick="plusSlide()">
-        <img src="./images/slider-right.png" alt="">
-      </div>
-
-      <div class="github__title container">
-        <h2 class="roboto-slab">История коммитов из GitHub</h2>
-        <a class="github__link" href="https://github.com" target="_blank">
-          <span>Открыть в Github</span>
-          <img src="./images/arrow_right.svg" alt="" class="arrow-right">
-        </a>
-      </div>
-
-
-      <div class="github__outer container">
-
-        <div class="githab__inner">
-          <div class="githab__card">
-            <div class="githab__card_block">
-              <p class="githab__card_data">14 августа, 2019</p>
-              <div class="github__card_inner">
-                <div class="github__card_inner-avatar">
-                  <img src="./images/git_avatar.png" alt="">
-                </div>
-                <div class="github__card_inner-info">
-                  <h3 class="github__card_inner-name roboto-slab">Антон Долинин</h3>
-                  <p class="github__card_inne-mail">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="githab__card_commit">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly
-                improve your HTML & CSS
-                workflow.</p>
-            </div>
-          </div>
-
-          <div class="githab__card">
-            <div class="githab__card_block">
-              <p class="githab__card_data">14 августа, 2019</p>
-              <div class="github__card_inner">
-                <div class="github__card_inner-avatar">
-                  <img src="./images/git_avatar.png" alt="">
-                </div>
-                <div class="github__card_inner-info">
-                  <h3 class="github__card_inner-name roboto-slab">Антон Долинин</h3>
-                  <p class="github__card_inne-mail">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="githab__card_commit">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly
-                improve your HTML & CSS
-                workflow.</p>
-            </div>
-          </div>
-
-          <div class="githab__card">
-            <div class="githab__card_block">
-              <p class="githab__card_data">14 августа, 2019</p>
-              <div class="github__card_inner">
-                <div class="github__card_inner-avatar">
-                  <img src="./images/git_avatar.png" alt="">
-                </div>
-                <div class="github__card_inner-info">
-                  <h3 class="github__card_inner-name roboto-slab">Антон Долинин</h3>
-                  <p class="github__card_inne-mail">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="githab__card_commit">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly
-                improve your HTML & CSS
-                workflow.</p>
-            </div>
-          </div>
-
-          <div class="githab__card">
-            <div class="githab__card_block">
-              <p class="githab__card_data">14 августа, 2019</p>
-              <div class="github__card_inner">
-                <div class="github__card_inner-avatar">
-                  <img src="./images/git_avatar.png" alt="">
-                </div>
-                <div class="github__card_inner-info">
-                  <h3 class="github__card_inner-name roboto-slab">Антон Долинин</h3>
-                  <p class="github__card_inne-mail">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="githab__card_commit">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly
-                improve your HTML & CSS
-                workflow.</p>
-            </div>
-          </div>
-
-          <div class="githab__card">
-            <div class="githab__card_block">
-              <p class="githab__card_data">14 августа, 2019</p>
-              <div class="github__card_inner">
-                <div class="github__card_inner-avatar">
-                  <img src="./images/git_avatar.png" alt="">
-                </div>
-                <div class="github__card_inner-info">
-                  <h3 class="github__card_inner-name roboto-slab">Антон Долинин</h3>
-                  <p class="github__card_inne-mail">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="githab__card_commit">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly
-                improve your HTML & CSS
-                workflow.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-      <div class="github__slider-dots">
-        <span class="github__slider-dots_item" onclick="currentSlide(1)"></span>
-        <span class="github__slider-dots_item" onclick="currentSlide(2)"></span>
-        <span class="github__slider-dots_item" onclick="currentSlide(3)"></span>
-      </div>
-    </section>
-
-  </div>
-
-
-  <div page="analytic" class="page">
-    <section class="request container">
-      <div class="request__navigation">
-        <p class="request__link to-index">
-          <a href="#">Главная</a>
-        </p>
-        <p class="request__analytic">/ Аналитика</p>
-      </div>
-      <h2 class="roboto-slab">Вы спросили: «Путешествия»</h2>
-      <p class="request__news">Новостей за неделю:</p>
-      <p class="request__news">Упоминаний в загаловках:</p>
-    </section>
-
-    <section class="statistics container bg-smoke">
-      <h3 class="statistics__title roboto-slab">Аналитика по дням</h3>
-
-      <div class="statistics__header">
-        <div class="first-column">Дата<br>(август)</div>
-        <div class="rest-column">Кол-во упоминаний</div>
-      </div>
-
-      <div class="statistics__percent">
-        <div class="first-column">
-          <div><span>0</span></div>
-        </div>
-        <div class="rest-column">
-          <div><span>25</span></div>
-          <div><span>50</span></div>
-          <div><span>75</span></div>
-          <div><span>100</span></div>
-        </div>
-      </div>
-
-      <div class="charts">
-        <div class="charts__day">
-          <div class="first-column">19, пн</div>
-          <div class="rest-column">
-            <div class="charts__line" style="width: 20%">20</div>
-          </div>
-        </div>
-        <div class="charts__day">
-          <div class="first-column">20, вт</div>
-          <div class="rest-column">
-            <div class="charts__line" style="width: 40%">40</div>
-          </div>
-        </div>
-        <div class="charts__day">
-          <div class="first-column">21, ср</div>
-          <div class="rest-column">
-            <div class="charts__line" style="width: 60%">60</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="statistics__percent">
-        <div class="first-column">
-          <div><span>0</span></div>
-        </div>
-        <div class="rest-column">
-          <div><span>25</span></div>
-          <div><span>50</span></div>
-          <div><span>75</span></div>
-          <div><span>100</span></div>
-        </div>
-      </div>
-
-    </section>
-  </div>
-
 </div>
+    <div class="loader bg-smoke">
+  <div class="loader__inner">
+    <img src="/images/loader.gif" alt="Здесь должна быть картинка" width=120px/>
+    <p class="loader__text">Идет поиск новостей...</p>
+  </div>
+</div>
+    <div class="not-found bg-smoke">
+  <div class="not-found__inner">
+    <img src="/images/not-found.png" alt="Здесь должна быть картинка"/>
+    <h3 class="not-found__title roboto-slab">Ничего не найдено</h3>
+    <p class="not-found__text">К сожалению по вашему запросу ничего не найдено.</p>
+  </div>
+</div>
+
+    <div class="result container bg-smoke">
+  <div class="result__title title">
+    <h2 class="roboto-slab">Результаты поиска</h2>
+    <a href="/analytic.html" class="link">
+      <span>Посмотреть аналитику</span>
+      <img src="/images/arrow_right.svg" alt="Здесь должна быть картинка" class="arrow-right">
+    </a>
+  </div>
+  <div class="result__container">
+
+    <div class="result__card">
+      <img class="result__card__picture" src="/images/image.png" alt="Здесь должна быть картинка">
+      <div class="result__card__info">
+        <p class="result__card__date source-sans-pro">2 августа, 2019</p>
+        <h3 class="result__card__title roboto-slab">Национальное достояние – парки</h3>
+        <p class="result__card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+          начала складываться система
+          национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+        <p class="result__card__source roboto-slab">Лента.ру</p>
+      </div>
+    </div>
+    <div class="result__card">
+      <img class="result__card__picture" src="/images/image.png" alt="Здесь должна быть картинка">
+      <div class="result__card__info">
+        <p class="result__card__date source-sans-pro">2 августа, 2019</p>
+        <h3 class="result__card__title roboto-slab">Национальное достояние – парки</h3>
+        <p class="result__card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+          начала складываться система
+          национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+        <p class="result__card__source roboto-slab">Лента.ру</p>
+      </div>
+    </div>
+    <div class="result__card">
+      <img class="result__card__picture" src="/images/image.png" alt="Здесь должна быть картинка">
+      <div class="result__card__info">
+        <p class="result__card__date source-sans-pro">2 августа, 2019</p>
+        <h3 class="result__card__title roboto-slab">Национальное достояние – парки</h3>
+        <p class="result__card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+          начала складываться система
+          национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+        <p class="result__card__source roboto-slab">Лента.ру</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="result__button">
+    <button class="result__button__inner">Показать еще</button>
+  </div>
+</div>
+    <div class="author container">
+  <div class="author__avatar">
+    <img src="/images/avatar.jpg" alt="Здесь должна быть картинка" class="author__avatar_foto"/>
+  </div>
+  <div class="author__info">
+    <h3 class="roboto-slab">Об авторе</h3>
+    <p>Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь,
+      какими технологиями разработки владете.</p>
+    <p>Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+      потенциальным заказчикам.</p>
+  </div>
+</div>
+
+  </div>
+</div>
+
 <div class="pusher"></div>
 
 <footer class="footer container">
   <div class="footer__author">
-    <p>© 2019 Supersite</p>
+    <p>© 2019 Alena Zinovieva</p>
   </div>
   <nav class="footer__navigation source-sans-pro">
     <ul>
       <li>
-        <a href="#" class="to-index">Главная</a>
+        <a href="/" class="link">Главная</a>
       </li>
       <li>
-        <a href="#" class="to-about">О проекте</a>
+        <a href="/about.html" class="link">О проекте</a>
       </li>
       <li>
-        <a href="https://praktikum.yandex.ru" target="_blank">Яндекс.Практикум</a>
+        <a href="https://praktikum.yandex.ru" target="_blank" class="link">Яндекс.Практикум</a>
       </li>
     </ul>
   </nav>
@@ -390,20 +138,19 @@
     <ul>
       <li>
         <a href="https://github.com" target="_blank">
-          <img src="./images/social_github.svg" alt=""/>
+          <img src="/images/social_github.svg" alt="Github" class="shadow"/>
         </a>
       </li>
       <li>
         <a href="https://www.facebook.com" target="_blank">
-          <img src="./images/social_facebook.svg" alt=""/>
+          <img src="/images/social_facebook.svg" alt="Facebook" class="shadow"/>
         </a>
       </li>
     </ul>
   </nav>
 </footer>
 
-
-<script src="main.c7f3140c991d06fb2d9a.js?b313dfd433a76a4b5663"></script>
+<script src="index.e6adc4844d10d149d349.js?81afba3a975f80aa59b8"></script>
 </body>
 
 </html>
