@@ -1,0 +1,16 @@
+.loader {
+  padding-top:      80px;
+  padding-bottom:   80px;
+
+  &__inner {
+    margin:     0 auto;
+    max-width:  200px;
+    text-align: center;
+  }
+
+  &__text {
+    margin:    0;
+    font-size: 18px;
+    color:     #B6BCBF;
+  }
+}

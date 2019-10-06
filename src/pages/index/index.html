@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <%= require('html-loader!../head_meta.html') %>
+
+  <title>Дипломная работа Яндекс.Практикум</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.index.css %>">
+</head>
+
+<body>
+
+<div class="wrapper" data-page="index">
+  <%= require('html-loader!./views/header.html') %>
+
+  <div class="page">
+    <%= require('html-loader!./views/search.html') %>
+    <%= require('html-loader!./views/loader.html') %>
+    <%= require('html-loader!./views/not_found.html') %>
+    <%= require('html-loader!./views/result.html') %>
+    <%= require('html-loader!../author.html') %>
+  </div>
+</div>
+
+<div class="pusher"></div>
+
+<%= require('html-loader!../footer.html') %>
+
+<script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
+</body>
+
+</html>

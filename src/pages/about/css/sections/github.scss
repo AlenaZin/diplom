@@ -1,0 +1,265 @@
+.github {
+  padding-top: 80px;
+  padding-bottom: 80Px;
+  position: relative;
+  overflow: hidden;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    line-height: 46px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: normal;
+    font-size: 40px;
+  }
+
+  &__link {
+    margin: 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: #1A1B22;
+    white-space: nowrap;
+  }
+
+  &__outer {
+    height: 288px;
+    margin: 64px 0 48px;
+    position: relative;
+
+    &:after, &:before {
+      content: '';
+      position: absolute;
+      z-index: 100;
+      width: 120px;
+      height: 288px;
+      right: 0;
+      top: 0;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      border: none;
+      background: -webkit-linear-gradient(0deg, rgba(178, 44, 44, 0) 0, rgba(255, 255, 255, 1) 100%);
+      background: -moz-linear-gradient(90deg, rgba(178, 44, 44, 0) 0, rgba(255, 255, 255, 1) 100%);
+      background: linear-gradient(90deg, rgba(178, 44, 44, 0) 0, rgba(255, 255, 255, 1) 100%);
+      background-position: 50% 50%;
+      -webkit-background-origin: padding-box;
+      background-origin: padding-box;
+      -webkit-background-clip: border-box;
+      background-clip: border-box;
+      -webkit-background-size: auto auto;
+      background-size: auto auto;
+    }
+
+    &:before {
+      right: auto;
+      left: 0;
+      background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 1%, rgba(178, 44, 44, 0) 84%, rgba(178, 44, 44, 0) 100%, rgba(178, 44, 44, 0) 100%);
+      background-image: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 1%, rgba(178, 44, 44, 0) 84%, rgba(178, 44, 44, 0) 100%, rgba(178, 44, 44, 0) 100%);
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 1%, rgba(178, 44, 44, 0) 84%, rgba(178, 44, 44, 0) 100%, rgba(178, 44, 44, 0) 100%);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    width: max-content;
+  }
+
+  &__card {
+    width: 400px;
+    height: 288px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    margin-right: 16px;
+    cursor: pointer;
+    border: 1px solid transparent;
+
+    &:hover {
+      border: 1px solid lightgray;
+    }
+
+    &_block {
+      padding: 24px;
+    }
+
+    &_data {
+      font-size: 14px;
+      color: #B6BCBF;
+      margin-top: 0;
+    }
+
+    &_inner {
+      display: flex;
+    }
+
+    &_inner-info {
+      margin-left: 16px;
+    }
+
+    &_inner-name {
+      font-weight: normal;
+      font-size: 26px;
+      margin: 0;
+    }
+
+    &_inne-mail {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    &_inner-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    &_commit {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__slider-dots {
+    text-align: center;
+
+    &_item {
+      cursor: pointer;
+      height: 8px;
+      width: 8px;
+      margin: 0 2px;
+      background-color: #D1D2D6;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+
+      &_active, &:hover {
+        background-color: #1A1B22;
+      }
+    }
+  }
+
+  &__arrow {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 200;
+
+    &:hover {
+      transform: scale(1.2);
+      transition-duration: 1s;
+    }
+
+    &.left {
+      top: 48%;
+      left: 18px;
+      cursor: pointer;
+      transition: 0.6s ease;
+    }
+
+    &.right {
+      right: 18px;
+      top: 48%;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .github {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__title {
+      font-size: 30px;
+      max-width: 338px;
+    }
+
+    &__arrow {
+      z-index: -200;
+    }
+
+    &__outer {
+      margin: 32px 0 32px;
+
+      &:after {
+        z-index: -100;
+      }
+
+      &:before {
+        z-index: -100;
+      }
+    }
+
+    &__card_inner-name {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .github {
+    padding-top: 32px;
+    padding-bottom: 120Px;
+
+    &__title {
+      font-size: 30px;
+      max-width: 200px;
+    }
+
+    &__header {
+      display: block;
+    }
+
+    &__link {
+      position: absolute;
+      bottom: 45px;
+      left: 16px;
+      right: 16px;
+      height: 56px;
+      line-height: 56px;
+      border: 1px solid #1A1B22;
+      border-radius: 80px;
+      font-size: 18px;
+      text-align: center;
+      cursor: pointer;
+      box-sizing: content-box;
+      display: inline-block;
+    }
+
+    &__picture {
+      display: none;
+    }
+
+    &__arrow {
+      z-index: -200;
+    }
+
+    &__outer {
+      margin: 16px 0;
+
+      &:before {
+        z-index: -100;
+      }
+
+      &:after {
+        z-index: -100;
+      }
+    }
+
+    &__card {
+      width: 302px;
+
+      &_block {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      &_inner-name {
+        font-size: 20px;
+      }
+    }
+  }
+}

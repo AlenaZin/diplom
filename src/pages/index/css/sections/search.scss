@@ -1,0 +1,116 @@
+.search {
+  background-image:    url(/images/background.png);
+  background-repeat:   no-repeat;
+  padding:             140px 0 80px;
+  background-size:     cover;
+  background-position: center top;
+
+  &__inner {
+    margin:    0 auto;
+    max-width: 577px;
+  }
+
+  &__title {
+    font-size:   60px;
+    margin:      0;
+    font-weight: normal;
+    color:       #FFFFFF;
+  }
+
+  &__text {
+    font-size:     18px;
+    margin-top:    32px;
+    margin-bottom: 64px;
+    color:         #FFFFFF;
+  }
+
+  &__panel {
+    position:   relative;
+    box-sizing: border-box;
+  }
+
+  &__input {
+    width:           100%;
+    border:          1px solid #D1D2D6;
+    backdrop-filter: blur(8px);
+    border-radius:   100px;
+    height:          64px;
+    font-size:       16px;
+    padding-left:    24px;
+    outline:         none;
+    box-sizing:      border-box;
+
+    &:active {
+      border: 1px solid grey;
+    }
+  }
+
+  &__button {
+    background:    #2F71E5;
+    box-shadow:    0 5px 15px rgba(14, 26, 57, 0.2);
+    border-radius: 100px;
+    position:      absolute;
+    top:           0;
+    right:         0;
+    height:        64px;
+    width:         168px;
+    font-size:     18px;
+    text-align:    center;
+    color:         #FFFFFF;
+    border:        0 solid #D1D2D6;
+    outline:       none;
+    box-sizing:    border-box;
+    cursor:        pointer;
+
+    &:hover {
+      background: #2A65CC;
+    }
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .search {
+    &__title {
+      font-size: 36px;
+      max-width: 230px;
+    }
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .search {
+    &__panel {
+      padding: 0 15px;
+    }
+
+    &__title {
+      font-size:    36px;
+      max-width:    230px;
+      margin-left:  16px;
+      margin-right: 16px;
+    }
+
+    &__text {
+      font-size:    20px;
+      margin-left:  16px;
+      margin-right: 16px;
+    }
+
+    &__button {
+      position:   relative;
+      width:      100%;
+      margin-top: 16px;
+    }
+
+    &__inner {
+      max-width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
